@@ -1,6 +1,16 @@
 ```
 原作者版本1.3.5，出处https://github.com/kfiroo/react-native-cached-image
 
+1、CachedImage.js中
+const activityIndicatorProps = _.omit(this.props.activityIndicatorProps, ['style']);
+修改为
+const activityIndicatorProps = this.props.activityIndicatorProps
+
+2、NetInfo.isConnected.addEventListener('change' 以及NetInfo.isConnected.removeEventListener('change'中的change
+修改为
+connectionChange 
+
+以下内容完全来自原作者，使用方法无变化
 ```
 
 [![npm version](https://badge.fury.io/js/react-native-cached-image.svg)](https://badge.fury.io/js/react-native-cached-image)
