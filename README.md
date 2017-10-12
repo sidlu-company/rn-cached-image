@@ -1,5 +1,8 @@
 ```
+
 原作者版本1.3.5，出处https://github.com/kfiroo/react-native-cached-image
+
+为了适应RN0.49版本，做了如下改动
 
 1、CachedImage.js中
 const activityIndicatorProps = _.omit(this.props.activityIndicatorProps, ['style']);
